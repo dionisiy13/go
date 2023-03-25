@@ -9,9 +9,9 @@ import (
 
 func GetFloat() (float64, error) {
   reader := bufio.NewReader(os.Stdin)
-  input, err := reader.ReadString("\n")
+  input, err := reader.ReadString('\n')
   if err != nil {
-    return 0, errr
+    return 0, err
   }
 
   input = strings.TrimSpace(input)
